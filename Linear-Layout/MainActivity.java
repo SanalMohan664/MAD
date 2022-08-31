@@ -6,12 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText fn,ln,dob,pno,email,pwd;
     private Button b1;
-    private String Firstname,Lastname,DOB,Phone,Mail,Password;
+    private RadioGroup gn;
+    String Firstname,Lastname,DOB,Phone,Mail,Password;
+    int gndr;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +26,13 @@ public class MainActivity extends AppCompatActivity {
         fn=(EditText) findViewById(R.id.fn);
         ln=(EditText) findViewById(R.id.ln);
         dob=(EditText) findViewById(R.id.dob);
-        pno=findViewById(R.id.pno);
-        email=findViewById(R.id.email);
-        pwd=findViewById(R.id.pwd);
+        gn=(RadioGroup) findViewById(R.id.ge);
+        pno=(EditText) findViewById(R.id.pno);
+        email=(EditText) findViewById(R.id.email);
+        pwd=(EditText) findViewById(R.id.pwd);
         b1=(Button) findViewById(R.id.b1);
+
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 Firstname=fn.getText().toString();
                 Lastname=ln.getText().toString();
                 DOB=dob.getText().toString();
+                gndr=gn.getCheckedRadioButtonId();
                 Phone=pno.getText().toString();
                 Mail=email.getText().toString();
                 Password=pwd.getText().toString();
 
-                if (Firstname.equals(""))
+                if (fn.length()==0)
                 {
                     Toast.makeText(MainActivity.this, "Enter Your First Name", Toast.LENGTH_SHORT).show();
                 }
@@ -47,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 else if (DOB.equals(""))
                 {
                     Toast.makeText(MainActivity.this, "Enter Your Date of Birth", Toast.LENGTH_SHORT).show();
+                }
+                else if(gndr==-1)
+                {
+                    Toast.makeText(MainActivity.this, "Select your gender", Toast.LENGTH_SHORT).show();
                 }
                 else if (Phone.equals(""))
                 {
