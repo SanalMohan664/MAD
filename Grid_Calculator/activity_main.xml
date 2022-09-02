@@ -14,11 +14,6 @@
     <TextView
         android:id="@+id/textview"
         android:layout_gravity="center"
-        android:backgroundTint="#DD1616"
-        android:backgroundTintMode="multiply"
-        android:foregroundTint="#802424"
-        android:selectAllOnFocus="false"
-        android:shadowColor="#FFFEFE"
         android:text="CALCULATOR"
         android:textColor="#0F4C43"
         android:textSize="40dp"
