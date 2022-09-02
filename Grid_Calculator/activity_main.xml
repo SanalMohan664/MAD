@@ -14,10 +14,15 @@
     <TextView
         android:id="@+id/textview"
         android:layout_gravity="center"
-        android:text="Calculator"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="50dp"/>
+        android:backgroundTint="#DD1616"
+        android:backgroundTintMode="multiply"
+        android:foregroundTint="#802424"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#FFFEFE"
+        android:text="CALCULATOR"
+        android:textColor="#0F4C43"
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="336dp"
@@ -45,20 +50,27 @@
 
         <Button
             android:id="@+id/bu1"
+            android:backgroundTint="#CB0B6A81"
             android:onClick="NumberEvent"
-            android:text="1"
-            />
+            android:layout_margin="3dp"
+            android:text="1" />
         <Button
             android:id="@+id/bu2"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="2" />
         <Button
             android:id="@+id/bu3"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="3"
             />
         <Button
             android:id="@+id/sum"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="OperatorEvent"
             android:text="+"
             />
@@ -72,21 +84,29 @@
 
         <Button
             android:id="@+id/bu4"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="4"
             />
         <Button
             android:id="@+id/bu5"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="5"
             />
         <Button
             android:id="@+id/bu6"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="6"
             />
         <Button
             android:id="@+id/sub"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="OperatorEvent"
             android:text="-"
             />
@@ -99,21 +119,29 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/bu7"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="7"
             />
         <Button
             android:id="@+id/bu8"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="8"
             />
         <Button
             android:id="@+id/bu9"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="9"
             />
         <Button
             android:id="@+id/mul"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="OperatorEvent"
             android:text="*"
             />
@@ -126,23 +154,31 @@
 
         <Button
             android:id="@+id/bu0"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="0"
             />
         <Button
             android:id="@+id/div"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="OperatorEvent"
             android:text="/"
             />
 
         <Button
             android:id="@+id/equals"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="EqualEvent"
             android:text="="
             />
 
         <Button
             android:id="@+id/clr"
+            android:backgroundTint="#CB0B6A81"
+            android:layout_margin="3dp"
             android:onClick="NumberEvent"
             android:text="Clr"
             />
